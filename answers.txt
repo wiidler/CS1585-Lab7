@@ -1,0 +1,6 @@
+Q1: There is a memory leak on line 114 of prob1.cpp
+Q2: On that line, we make a copy of the array, pointing to a new linked list, 
+    but we never delete it to free the memory.
+Q3: A use-after-free error was found, it does not run
+Q4: There is a use-after-free error with the copy constructor, also a memory leak with the 
+    copy pointer, it is never deleted at the end of the file.
